@@ -8,6 +8,16 @@
   --bg-hf: #2f303a;
   --tb-color: #f5f4fa;
   --color-adds: rgba(255, 255, 255, 0.6);
+  --pixels-interval: 30px;
+  --minuspixels: -30px;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 body {
   color: var(--title-color);
@@ -40,6 +50,13 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+.top {
+  border: 1px solid #ececec;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -53,7 +70,7 @@ img {
 .nav-item {
   margin-right: 50px;
 }
-.site-navigation .link {
+.site-navigation > .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -138,8 +155,10 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--other-color);
-  margin-top: 0px;
+  width: 696px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button1 {
   margin: 0 auto;
@@ -201,6 +220,7 @@ img {
 }
 .works-example {
   margin-right: 30px;
+  flex-basis: calc(100% / 3 - 60px);
 }
 .team {
   padding-bottom: 95px;
@@ -233,6 +253,7 @@ img {
   text-align: center;
   padding-bottom: 30px;
   background-color: var(--other-color);
+  flex-basis: calc(100% / 3 - 60px);
 }
 .team-photo {
   margin-bottom: 30px;
@@ -305,6 +326,7 @@ img {
 .buttons-container {
   margin-top: 64px;
   margin-bottom: 34px;
+  justify-content: center;
 }
 .buttons {
   list-style: none;
@@ -322,6 +344,7 @@ img {
   color: var(--other-color);
   cursor: pointer;
   border-color: transparent;
+  border-radius: 4px;
 }
 .key {
   font-weight: 500;
@@ -335,27 +358,39 @@ img {
   border: none;
 }
 .work-examples {
+  margin-top: -30px;
+  margin-left: -30px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
-
-.examples {
-  margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+.work-examples > .examples {
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 60px);
+}
+.exemple2-image {
+  margin: 0;
 }
 
 .example1-title {
-  margin: 0;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--title-color);
+  padding-bottom: 4px;
 }
 .example1-paragraph {
-  margin: 0;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--under-color);
+}
+.exmp {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-top: none;
 }
