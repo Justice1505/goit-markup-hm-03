@@ -365,13 +365,9 @@ img {
   flex-wrap: wrap;
 }
 .work-examples > .examples {
-  flex-wrap: wrap;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 60px);
-}
-.exemple2-image {
-  margin: 0;
 }
 
 .example1-title {
