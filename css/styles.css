@@ -161,7 +161,7 @@ img {
   color: var(--other-color);
 }
 .hero-container {
-  width: 696px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -188,7 +188,8 @@ img {
 .features {
   list-style: none;
   display: flex;
-  padding-bottom: 47px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .features-title {
   font-weight: 700;
@@ -207,10 +208,13 @@ img {
   margin: 0;
 }
 .features-class {
-  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 120px) / 4);
 }
 .works {
-  padding-bottom: 47px;
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .works-title {
@@ -221,7 +225,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 50px;
-  padding-top: 47px;
 }
 .our-works {
   list-style: none;
@@ -235,7 +238,8 @@ img {
   flex-basis: calc((100% - 90px) / 3);
 }
 .team {
-  padding-bottom: 95px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--tb-color);
 }
 .team-title {
@@ -266,7 +270,6 @@ img {
   margin-top: 30px;
   margin-left: 30px;
   text-align: center;
-  padding-bottom: 30px;
   background-color: var(--other-color);
   flex-basis: calc((100% - 120px) / 4);
   border-radius: 0px 0px 4px 4px;
@@ -296,7 +299,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--other-color);
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 .under {
   background-color: var(--bg-hf);
@@ -314,7 +317,9 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
+}
+.under-street:not(:last-child) {
+  margin-bottom: 8px;
 }
 .link1 {
   text-decoration: none;
@@ -345,12 +350,14 @@ img {
 .buttons-container {
   padding-top: 94px;
   justify-content: center;
+  padding-bottom: 94px;
 }
 .buttons {
   list-style: none;
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: 34px;
 }
 .button-item {
   margin-left: 8px;
