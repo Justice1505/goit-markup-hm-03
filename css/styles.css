@@ -162,10 +162,10 @@ img {
 }
 .hero-container {
   width: 696px;
-  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .button1 {
   margin: 0 auto;
   display: inline-block;
@@ -182,12 +182,13 @@ img {
   margin-top: 30px;
 }
 .features-container {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 94px;
+  padding-bottom: 47px;
 }
 .features {
   list-style: none;
   display: flex;
+  padding-bottom: 47px;
 }
 .features-title {
   font-weight: 700;
@@ -209,7 +210,7 @@ img {
   margin-right: 30px;
 }
 .works {
-  padding-bottom: 94px;
+  padding-bottom: 47px;
 }
 
 .works-title {
@@ -219,13 +220,18 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
+  padding-top: 47px;
 }
 .our-works {
   list-style: none;
   display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .works-example {
-  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
 .team {
@@ -245,6 +251,8 @@ img {
   list-style: none;
   text-align: center;
   display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .name1 {
   font-weight: 500;
@@ -255,6 +263,7 @@ img {
   margin-bottom: 10px;
 }
 .team-cards {
+  margin-top: 30px;
   margin-left: 30px;
   text-align: center;
   padding-bottom: 30px;
@@ -287,7 +296,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--other-color);
   display: block;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .under {
   background-color: var(--bg-hf);
@@ -305,7 +314,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .link1 {
   text-decoration: none;
@@ -398,4 +407,7 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+.exmp-team {
+  padding: 20px 24px;
 }
