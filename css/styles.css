@@ -380,6 +380,7 @@ img {
   background: #f5f4fa;
   padding: 6px 22px;
   border: none;
+  border-radius: 4px;
 }
 .work-examples {
   margin-top: -30px;
@@ -414,5 +415,5 @@ img {
   border-right: 1px solid #eeeeee;
 }
 .exmp-team {
-  padding: 20px 24px;
+  padding: 20px 20px;
 }
